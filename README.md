@@ -1,4 +1,4 @@
-# Evolutionary Optimization Algorithms: Particle Swarm Optimization
+# Evolutionary optimisation algorithms: application to the Optimal Image Collage Composition problem
 
 ## Author
 Kazimieras Jasaitis
@@ -11,6 +11,7 @@ The PSO and HSO algorithms are examined in detail, particularly in their applica
 
 ## Keywords
 - Particle Swarm Optimization (PSO)
+- Harmony Search Optimization (HSO)
 - Evolutionary Methods
 - Optimization
 - 2D Bin Packing Problem
