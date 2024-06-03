@@ -28,6 +28,24 @@ Dependencies are specified in the `testingEnv.yaml` file. Ensure that all depend
    conda env create -f testingEnv.yaml
    conda activate your-env-name
 
+2. **Install required packages**:
+   If you are not using a Conda environment or need to install packages manually:
+   ```bash
+   pip install numpy pillow
+   ```
+### Running the Algorithms
+
+You can run the algorithms from the command line:
+
+- For Particle Swarm Optimization:
+  ```bash
+  py pso.py
+  ```
+
+- For Harmony Search Optimization:
+  ```bash
+  py hso.py
+  ```
 
 ## Keywords
 - Particle Swarm Optimization (PSO)
@@ -36,4 +54,3 @@ Dependencies are specified in the `testingEnv.yaml` file. Ensure that all depend
 - Optimization
 - 2D Bin Packing Problem
 - Image Collage Composition
-
