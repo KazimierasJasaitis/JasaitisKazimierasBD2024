@@ -189,11 +189,11 @@ class PSO:
         uncovered_area_penalties = np.maximum(uncovered_area_penalties, 0.0)
         scaling_penalties = calculate_scaling_penalties()
 
-        # Normalizing penalty weights
-        scaling_penalties = scaling_penalties / self.max_resizing_deviation
-        out_of_bound_penalties = out_of_bound_penalties / ( self.total_area * len(image_sizes))
-        uncovered_area_penalties = uncovered_area_penalties / self.total_area
-        overlapping_area_penalties = overlapping_area_penalties / self.biggest_possible_overlap
+        # # Normalizing penalty weights
+        # scaling_penalties = scaling_penalties / self.max_resizing_deviation
+        # out_of_bound_penalties = out_of_bound_penalties / ( self.total_area * len(image_sizes))
+        # uncovered_area_penalties = uncovered_area_penalties / self.total_area
+        # overlapping_area_penalties = overlapping_area_penalties / self.biggest_possible_overlap
 
         fitness = scaling_penalties * scaling_penalty_factor + out_of_bound_penalties * boundary_penalty_factor +\
             uncovered_area_penalties * uncovered_area_penalty_factor + overlapping_area_penalties * overlap_penalty_factor
@@ -309,14 +309,14 @@ class PSO:
 if __name__ == "__main__":
 
     paper_width = 100
-    paper_height = 80
+    paper_height = 60
     paper_size = (paper_width, paper_height)
-    image_sizes = [[100,20],[100,20],[100,20],[100,20]]
+    image_sizes = [[100,20],[100,20],[100,20]]
     N = len(image_sizes)
-    population_size = 100
+    population_size = 50
     desired_fitness = 0
-    iterations_without_improvement_limit = 2000
-    w, c1, c2 = 0.729, 1.49455, 1.49455
+    iterations_without_improvement_limit = 1000
+    w, c1, c2 = 0.4, 1.0, 2.0
     # w, c1, c2 = 0.7, 1, 2
     #w, c1, c2 = 0.3, 1.5, 1.5
 

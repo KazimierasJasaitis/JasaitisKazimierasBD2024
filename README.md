@@ -8,6 +8,26 @@ In the realm of computational problem-solving, deterministic algorithms often fa
 
 The PSO and HSO algorithms are examined in detail, particularly in their application to the problem through the development of a unit test generator and the execution of performance tests. The unit test generator segments an image into `n` pieces, upon which the PSO algorithm is employed to find optimal or near-optimal placements on a canvas. The performance of PSO is critically evaluated using various metrics, leading to valuable insights and recommendations for potential enhancements and future research directions.
 
+## Running the Algorithms
+
+To run the Particle Swarm Optimization (PSO) and Harmony Search Optimization (HSO) algorithms, you need to set up your environment with the required packages. 
+
+### Prerequisites
+
+- Python version required: **3.12.0**
+- Additional required packages:
+  - `numpy`
+  - `pillow`
+
+Dependencies are specified in the `testingEnv.yaml` file. Ensure that all dependencies are installed before attempting to run the algorithms.
+
+### Installation
+
+1. **Create and activate a Conda environment** (Optional):
+   ```bash
+   conda env create -f testingEnv.yaml
+   conda activate your-env-name
+
 
 ## Keywords
 - Particle Swarm Optimization (PSO)

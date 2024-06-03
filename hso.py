@@ -206,10 +206,10 @@ if __name__ == "__main__":
     paper_size = (100, 100)
     image_sizes = [[100, 50], [100, 50]]
     dimensions = 3 * len(image_sizes)
-    iterations_without_improvement_limit = 1000
+    iterations_without_improvement_limit = 10000
     desired_fitness = 0
     HM_size = 50
-    memory_consideration_rate = 0.8
+    memory_consideration_rate = 0.95
     pitch_adjustment_rate = 0.4
     pitch_bandwidth = 0.1
 
